@@ -37,7 +37,8 @@ TEST(TestCountPositives, AllNegativesTest)
     int count = countPositives(inputVector);
 
     // Assert
-    ASSERT_EQ(0, count);
+    EXPECT_EQ(20, count);
+    std::cout << "After the assertion:\n";
 }
 
 int main(int argc, char **argv)
